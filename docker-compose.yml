@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  
+  microservice_gest-client:
+    build: . 
+    ports:
+      - "4000:3000" # Map host port 4000 to container port 3000
+    env_file:
+      - .env # Load environment variables from the .env file
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

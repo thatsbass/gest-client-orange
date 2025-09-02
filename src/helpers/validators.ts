@@ -7,7 +7,7 @@ const phoneNumberSchema = z.object({
     .max(15, "Le numéro de téléphone ne peut pas dépasser 15 chiffres.")
     .regex(
       /^\d+$/,
-      "Le numéro de téléphone ne doit contenir que des chiffres."
+      "Le numéro de téléphone ne doit contenir que des chiffres.",
     ),
 });
 

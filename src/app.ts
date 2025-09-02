@@ -1,6 +1,6 @@
 import express from "express";
 import Routes from "./routes/index";
-import errorMiddleware from "./middlewares/ErrorMiddleware";
+import errorMiddleware from "./middlewares/errorMiddleware";
 
 /**
  * @function createApp

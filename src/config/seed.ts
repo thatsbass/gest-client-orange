@@ -1,25 +1,25 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { ClientModel } from '../models/client.model';
-import { LogModel } from '../models/log.model';
+import { ClientModel } from '../models/clientModel';
+import { LogModel } from '../models/logModel';
 
 // Charger les variables d'environnement
 dotenv.config();
 
 const clients = [
   {
-    name: 'Moussa Sene',
-    phone: '771234567',
-    email: 'moussa.sene@example.com',
-    address: 'Yoff',
+    name: 'Mariam dion',
+    phone: '773612264',
+    email: 'mariam.dion@example.com',
+    address: 'Cite gadaye',
     isActive: true,
   },
   {
-    name: 'Awa Fall',
+    name: 'Bassirou Diaw',
     phone: '786333750',
-    email: 'awa.fall@example.com',
+    email: 'thatsbass@example.com',
     address: 'Pikine',
-    isActive: true,
+    isActive: false,
   },
   {
     name: 'Cheikh Diop',
@@ -29,9 +29,9 @@ const clients = [
     isActive: false, 
   },
   {
-    name: 'Fatou Ndiaye',
+    name: 'Fatou Mbengue',
     phone: '771302004',
-    email: 'fatou.ndiaye@example.com',
+    email: 'fatou.mbengue@example.com',
     address: 'Dakar',
     isActive: true,
   },

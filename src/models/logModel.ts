@@ -8,23 +8,23 @@ enum LogStatusEnum {
 }
 
 interface ILog extends Document {
-  requestIdentifier: string;
-  timestamp: Date;
+  phone: string;
   status: LogStatusEnum;
   message: string;
+  timestamp: Date;
 }
 
 const logSchema = new Schema<ILog>({
-  requestIdentifier: { type: String, required: true },
-  timestamp: { type: Date, default: Date.now },
+  phone: { type: String, required: true },
   status: {
     type: String,
     required: true,
     enum: Object.values(LogStatusEnum),
   },
   message: { type: String, required: true },
+  timestamp: { type: Date, default: Date.now },
 });
 
-const LogModel = mongoose.model<ILog>("Log", logSchema);
+const LogModel = mongoose.model<ILog>("Logger", logSchema);
 
 export { ILog, LogModel, LogStatusEnum as LogStatus };

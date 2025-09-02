@@ -1,12 +1,10 @@
-import { Router } from 'express';
-import ClientController from '../controllers/clientController';
-import ClientService from '../services/ClientService';
-import ClientRepository from '../repositories/ClientRepository';
+import { Router } from "express";
+import * as clientController from "../controllers/clientController";
 
 const router = Router();
-const clientRepository = new ClientRepository();
-const clientService = new ClientService(clientRepository);
-const clientController = new ClientController(clientService);
 
-router.get('/client/:phone', clientController.findClientByPhone.bind(clientController));
+router.get(
+  "/client/:phone",
+  clientController.findClientByPhone
+);
 export default router;

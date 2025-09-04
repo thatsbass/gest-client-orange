@@ -1,8 +1,11 @@
-import { Express } from "express";
-import clientRoutes from "./client.routes";
-import logRoutes from "./log.routes";
+import { Express, Router } from "express";
+import clientRoutes from "../modules/clients/client.routes";
+import logRoutes from "../modules/logs/log.routes";
 
 export default function (app: Express) {
-  app.use("/api", clientRoutes);
-  app.use("/api", logRoutes);
+  const apiRouter = Router();
+  
+  apiRouter.use("/clients", clientRoutes);
+  apiRouter.use("/logs", logRoutes);
+  app.use("/v1/api", apiRouter);
 }

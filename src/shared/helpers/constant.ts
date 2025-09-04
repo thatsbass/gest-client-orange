@@ -5,7 +5,7 @@ const ENV = {
   PORT: process.env.PORT || 3000,
 };
 
-const MESSAGE : Record<string, string> = {
+const MESSAGE  = {
   DB_CONNECTED: "✅ MongoDB connecté",
   DB_ERROR: "❌ Erreur connexion MongoDB:",
   SERVER_STARTED: `✅ Serveur démarré sur le port ${ENV.PORT}`,
@@ -19,7 +19,7 @@ const MESSAGE : Record<string, string> = {
 };
 
 
-const STATUS_CODE : Record<string, number> = {
+const STATUS_CODE = {
   NOT_FOUND: 404,
   INACTIVE: 403,
   SUCCESS: 200,

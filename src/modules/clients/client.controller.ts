@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { phoneNumberSchema } from "../helpers/validators";
-import { ClientService } from "../services/client.service";
+import { phoneNumberSchema } from "../../shared/helpers/validators";
+import { ClientService } from "./client.service";
 
 export class ClientController {
 

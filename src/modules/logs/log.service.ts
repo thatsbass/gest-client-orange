@@ -1,5 +1,7 @@
-import { NotFoundError } from "../common/exceptions/notFoundError";
-import { ILog, LogModel } from "../models/logModel";
+
+import { NotFoundError } from "../../shared/common/exceptions/notFoundError";
+import { ILog, LogModel } from "./logModel";
+
 
 export class LoggerService {
     async getAllLogs(): Promise<ILog[]> {

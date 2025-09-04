@@ -1,7 +1,8 @@
-import { ClientController } from "../controllers/client.controller";
-import { LogController } from "../controllers/log.controller";
-import { ClientService } from "../services/client.service";
-import { LoggerService } from "../services/log.service";
+import { ClientController } from "../modules/clients/client.controller";
+import { ClientService } from "../modules/clients/client.service";
+import { LogController } from "../modules/logs/log.controller";
+import { LoggerService } from "../modules/logs/log.service";
+
 
 const loggerService = new LoggerService();
 const clientService = new ClientService(loggerService);

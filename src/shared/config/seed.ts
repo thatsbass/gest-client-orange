@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { ClientModel } from '../models/clientModel';
-import { LogModel } from '../models/logModel';
+import { ClientModel } from '../../modules/clients/clientModel';
+import { LogModel } from '../../modules/logs/logModel';
+
 
 // Charger les variables d'environnement
 dotenv.config();

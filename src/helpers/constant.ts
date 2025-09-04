@@ -14,7 +14,8 @@ const MESSAGE : Record<string, string> = {
   INVALID_PHONE: "Le numéro de téléphone est invalide",
   CLIENT_FOUND: "Client trouvé avec succès",
   CLIENT_NOT_FOUND: "Aucun client trouvé avec ce numéro de téléphone",
-  CLIENT_INACTIVE: "Le client est inactifffff",
+  CLIENT_INACTIVE: "Le client est inactif",
+  LOG_NOT_FOUND : "Aucun log trouvé avec ce numéro de téléphone"
 };
 
 

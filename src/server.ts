@@ -1,6 +1,7 @@
 import app from "./app";
-import { ENV, MESSAGE } from "./helpers/constant";
-import { connectDB } from "./config/database";
+import { connectDB } from "./shared/config/database";
+import { ENV, MESSAGE } from "./shared/helpers/constant";
+
 
 /**
  * @function startServer

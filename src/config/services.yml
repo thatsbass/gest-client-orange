@@ -1,0 +1,25 @@
+services:
+  # Controllers
+  ClientController:
+    class: '../controllers/client.controller'
+    arguments:
+      - '@ClientService'
+
+  # Services
+  ClientService:
+    class: '../services/client.service'
+    arguments:
+      - '@LogService'
+      - '@ClientModel'
+
+  LogService:
+    class: '../services/log.service'
+    arguments:
+      - '@LogModel'
+
+  # Models
+  ClientModel:
+    class: '../models/clientModel'
+
+  LogModel:
+    class: '../models/logModel'
